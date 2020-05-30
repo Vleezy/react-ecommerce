@@ -1,0 +1,148 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "Choco Star",
+            "image": "/images/cookie_1.jpg",
+            "description": "Chocolate cookies with a star",
+            "price": 5.75,
+            "availableSizes": [
+                "s",
+                "L"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Sugar Cookie",
+            "image": "/images/cookie_2.jpg",
+            "description": "Chocolate cookies with a star",
+            "price": 5.50,
+            "availableSizes": [
+                "S",
+                "M"
+            
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Red Dot Cookies",
+            "image": "/images/cookie_3.jpg",
+            "description": "Cookies with a red sprinkles",
+            "price": 5.00,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Chocolate Chip Cookies",
+            "image": "/images/cookie_4.jpg",
+            "description": "Chocolate chip cookies freshly baked",
+            "price": 4.00,
+            "availableSizes": [
+                "S",
+                "L"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Christmas Cookie",
+            "image": "/images/cookie_5.jpg",
+            "description": "Christmas themes cookies",
+            "price": 5.25,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Colorful Cookies",
+            "image": "/images/cookie_6.jpg",
+            "description": "Cookies that assorted in different colors",
+            "price": 5.75,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "7",
+            "title":  "Christmas Tree Cookies",
+            "image": "/images/cookie_7.jpg",
+            "description":"christmas theme cookies shaped as a christmas tree",
+            "price": 5.25,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Easter Cookies",
+            "image": "/images/cookie_8.jpg",
+            "description": "Easter themed cookies",
+            "price": 4.00,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "9",
+            "title": "Heart Cookies",
+            "image": "/images/cookie_9.jpg",
+            "description": "Cookies shaped as hearts",
+            "price": 5.75,
+            "availableSizes": [
+                
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Emoji Cookies",
+            "image": "/images/cookie_10.jpg",
+            "description": "Cookies in assorted emoji shapes",
+            "price": 5.99,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "11",
+            "title":"Animal Cookies",
+            "image": "/images/cookie_11.jpg",
+            "description": "Cookies shaped into figures od different animals",
+            "price": 5.75,
+            "availableSizes": [
+                "S",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Crispy Cookies",
+            "image": "/images/cookie_12.jpg",
+            "description": "very crispy and delicious cookies",
+            "price": 5.75,
+            "availableSizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        }
+    ]
+}
