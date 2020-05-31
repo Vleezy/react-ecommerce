@@ -430,6 +430,8 @@ nav li a{
 .cart{
   background-color:rgba(160, 81, 45, 0.459);
   border-radius: 10%;
+  color:white;
+  font-weight: bolder;
 }
 
 /* SIDEBAR GIF IMAGES */
