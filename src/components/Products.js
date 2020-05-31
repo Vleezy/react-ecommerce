@@ -15,6 +15,7 @@ export default class Products extends Component {
                                     {product.title}
                                 </p>
                                 </a>
+                                <p className="product-description">{product.description}</p>
                                 <div className="product-price">
                                     <div>
                                         {/* TO ADD DOLLAR SIGN TO PRICE */}

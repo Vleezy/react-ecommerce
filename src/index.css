@@ -81,8 +81,9 @@ footer{
   justify-content:center;
   align-items:center;
   font-family: Arial, Helvetica, sans-serif;
-  border-top: solid #f2a65a 10px;
+  border-top: solid #A0522D 10px;
   margin-top:50px;
+  bottom:0;
   
 }
 
@@ -133,10 +134,17 @@ footer{
   height: 100%;
  
 }
+.products p {
+  font-weight:bolder;
+  font-size: 20px;
+}
 /* .product img{
 max-width: 37rem;
 max-height: 37rem;
 } */
+.product-description{
+  color: #A0522D;
+}
 .product-price{
   display: flex;
   justify-content: space-between;
@@ -258,7 +266,7 @@ flex:1;
  width:40px;
 } */
 .icon__facebook:hover, .icon__youtube:hover, .icon__instagram:hover, .icon__twitter:hover {
-  color: #f2a65a;
+  color: #A0522D ;
   box-shadow: 0 0 5px #f2a65a, 0 0 10px #f2a65a;
 }
 
