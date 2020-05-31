@@ -4,7 +4,7 @@ import Products from './components/Products';
 import Filter from './components/Filter';
 import Cart from './components/Cart';
 // import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Footers from './components/Footers';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -104,7 +104,7 @@ class App extends React.Component {
         </main>
         <footer>
           
-          <Footer></Footer>
+          <Footers></Footers>
         {/* &copy;2020 | R2H ECOMMERCE */}
     </footer>
       </div>
