@@ -240,6 +240,11 @@ flex:1;
 
 /*footer + content*/
 
+
+footer .footer__area{
+  border-top:none;
+}
+
 .footer__area {
   display: flex;
   justify-content:space-between;
