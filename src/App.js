@@ -3,6 +3,8 @@ import data from "./data";
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Cart from './components/Cart';
+// import Navbar from './components/Navbar';
+// import Footer from './components/Footer';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -75,7 +77,8 @@ class App extends React.Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="/">Products Page</a>
+          <a href="/">Cookie Shop</a>
+          {/* <Navbar>Vlad</Navbar> */}
         </header>
         <main>
           <div className="content">
@@ -100,7 +103,9 @@ class App extends React.Component {
           </div>
         </main>
         <footer>
-        &copy;2020 | Study Purposes
+          
+          {/* <Footer></Footer> */}
+        &copy;2020 | R2H ECOMMERCE
     </footer>
       </div>
     );

@@ -7,8 +7,10 @@
             "description": "Chocolate cookies with a star",
             "price": 5.75,
             "availableSizes": [
-                "s",
-                "L"
+                "6",
+                "12",
+                "18",
+                "30"
             ]
         },
         {
@@ -18,8 +20,8 @@
             "description": "Chocolate cookies with a star",
             "price": 5.50,
             "availableSizes": [
-                "S",
-                "M"
+                "18",
+                "30"
             
             ]
         },
@@ -30,9 +32,9 @@
             "description": "Cookies with a red sprinkles",
             "price": 5.00,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "18",
+                "24"
             ]
         },
         {
@@ -42,8 +44,8 @@
             "description": "Chocolate chip cookies freshly baked",
             "price": 4.00,
             "availableSizes": [
-                "S",
-                "L"
+                "12",
+                "24"
             ]
         },
         {
@@ -53,9 +55,9 @@
             "description": "Christmas themes cookies",
             "price": 5.25,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "12",
+                "24"
             ]
         },
         {
@@ -65,9 +67,9 @@
             "description": "Cookies that assorted in different colors",
             "price": 5.75,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "24",
+                "30"
             ]
         },
         {
@@ -77,9 +79,8 @@
             "description":"christmas theme cookies shaped as a christmas tree",
             "price": 5.25,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "30"
             ]
         },
         {
@@ -89,9 +90,10 @@
             "description": "Easter themed cookies",
             "price": 4.00,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "12",
+                "18",
+                "24"
             ]
         },
         {
@@ -102,8 +104,8 @@
             "price": 5.75,
             "availableSizes": [
                 
-                "M",
-                "L"
+                "6",
+                "12"
             ]
         },
         {
@@ -113,9 +115,10 @@
             "description": "Cookies in assorted emoji shapes",
             "price": 5.99,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "12",
+                "18",
+                "24"
             ]
         },
         {
@@ -125,9 +128,9 @@
             "description": "Cookies shaped into figures od different animals",
             "price": 5.75,
             "availableSizes": [
-                "S",
-                "M",
-                "L"
+                "6",
+                "12",
+                "18"
             ]
         },
         {
@@ -137,11 +140,11 @@
             "description": "very crispy and delicious cookies",
             "price": 5.75,
             "availableSizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
+                "6",
+                "12",
+                "18",
+                "24",
+                "30"
             ]
         }
     ]
