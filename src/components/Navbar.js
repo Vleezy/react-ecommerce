@@ -6,9 +6,9 @@ export default class Navbar extends Component {
       <div className="test">
         <nav className="navigation">
           <ul className="navigation__area">
-            <li><a href="home.html">Home</a></li>
-            <li><a className="active" href="product.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a className="active" href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
 
