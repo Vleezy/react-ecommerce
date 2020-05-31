@@ -5,6 +5,7 @@ import Filter from './components/Filter';
 import Cart from './components/Cart';
 import Navbar from './components/Navbar';
 import Footers from './components/Footers';
+import Showcase from './components/Showcase';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -83,6 +84,7 @@ class App extends React.Component {
         <main>
           <div className="content">
             <div className="main">
+              <Showcase></Showcase>
               {/* Passing size and sort to filter as property components + function handles changing size and sort*/}
              {/* FILTER COMPONENT */}
               <Filter count={this.state.products.length}
