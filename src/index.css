@@ -425,15 +425,13 @@ nav li a{
   font-size:60px; 
 }
 
+
+/* TESTING STUFF */
 .cart{
   background-color:rgba(160, 81, 45, 0.459);
   border-radius: 10%;
 }
-div .product{
-  /* background-color:rgba(160, 81, 45, 0.178); */
-  /* border-radius:100%; */
 
-}
 div .sidebar{
-  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat;
+  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat center;
 }

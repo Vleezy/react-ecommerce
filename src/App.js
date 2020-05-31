@@ -102,6 +102,7 @@ class App extends React.Component {
             <div className="sidebar">
               <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart}/>
               </div>
+              
           </div>
         </main>
         <footer>
