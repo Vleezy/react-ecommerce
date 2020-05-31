@@ -433,5 +433,11 @@ nav li a{
 }
 
 div .sidebar{
-  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat center;
+  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat bottom,url("https://i.pinimg.com/originals/1a/46/56/1a46560b674b7d9703eb3093fda1c928.gif") no-repeat top,background:url("https://pa1.narvii.com/6843/589bd950b4ecce546c381c9b09b2a248d6662744_00.gif") no-repeat center;
+  /* background:url("https://pa1.narvii.com/6843/589bd950b4ecce546c381c9b09b2a248d6662744_00.gif") no-repeat ; */
+}
+@media only screen and (max-width: 800px) {
+div .sidebar{
+  background:none;
+}
 }
