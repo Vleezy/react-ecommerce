@@ -105,7 +105,7 @@ footer{
 .product img{
   height: 300px;
   width: 300px;
-  border-radius:10%;
+  border-radius:100%;
 }
 
 /* products */
@@ -124,7 +124,7 @@ footer{
 .products li{
   flex: 0 1 29rem;
   height: 47rem;
-  padding: 1rem;
+  padding: 2.5rem;
   /* margin: 1rem; */
 }
 .product{
@@ -203,9 +203,6 @@ background-color:rgba(255, 255, 255, 0.137);
   width:100%;
   list-style-type: none;
 }
-.cart-items img{
-  width:5 rem;
-}
 .cart-items li{
   display:flex;
 }
@@ -218,7 +215,8 @@ background-color:rgba(255, 255, 255, 0.137);
 .cart-items img{
   height:100px;
   width:100px;
-  border-radius:10%;
+  border-radius:100%;
+  width:5 rem;
 }
 .right-align{
   text-align: right;
@@ -424,4 +422,9 @@ nav li a{
 .cart{
   background-color:rgba(160, 81, 45, 0.459);
   border-radius: 10%;
+}
+div .product{
+  /* background-color:rgba(160, 81, 45, 0.178); */
+  /* border-radius:100%; */
+
 }
