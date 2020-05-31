@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 
 export default class Navbar extends Component {
-    render() {
-        return (
-            <div className="test">
-                <ul className="navigation">
-  <li className="nav-item">
-    <a className="nav-link active" href="#">Home</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#">Products</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#">Contact</a>
-  </li>
-</ul>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="test">
+        <nav className="navigation">
+          <ul className="navigation__area">
+            <li><a href="home.html">Home</a></li>
+            <li><a className="active" href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    )
+  }
 }
