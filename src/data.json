@@ -29,7 +29,7 @@
             "id": "3",
             "title": "Red Dot Cookies",
             "image": "/images/cookie_3.jpg",
-            "description": "Cookies with a red sprinkles",
+            "description": "Cookies with red sprinkles",
             "price": 5.00,
             "availableSizes": [
                 "6",
@@ -41,7 +41,7 @@
             "id": "4",
             "title": "Chocolate Chip Cookies",
             "image": "/images/cookie_4.jpg",
-            "description": "Chocolate chip cookies freshly baked",
+            "description": "Traditional cookies",
             "price": 4.00,
             "availableSizes": [
                 "12",
@@ -112,7 +112,7 @@
             "id": "10",
             "title": "Emoji Cookies",
             "image": "/images/cookie_10.jpg",
-            "description": "Cookies in assorted emoji shapes",
+            "description": "Emoji shaped cookies",
             "price": 5.99,
             "availableSizes": [
                 "6",
@@ -125,7 +125,7 @@
             "id": "11",
             "title":"Animal Cookies",
             "image": "/images/cookie_11.jpg",
-            "description": "Cookies shaped into figures of animals",
+            "description": "Animal shape cookies",
             "price": 5.75,
             "availableSizes": [
                 "6",
@@ -137,7 +137,7 @@
             "id": "12",
             "title": "Crispy Cookies",
             "image": "/images/cookie_12.jpg",
-            "description": "very crispy and delicious cookies",
+            "description": "Crispy and delicious cookies",
             "price": 5.75,
             "availableSizes": [
                 "6",

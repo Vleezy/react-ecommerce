@@ -432,6 +432,7 @@ nav li a{
   border-radius: 10%;
 }
 
+/* SIDEBAR GIF IMAGES */
 div .sidebar{
   background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat top left, 
   url("https://thumbs.gfycat.com/ChubbyTartGrayling-max-1mb.gif") no-repeat bottom,
@@ -440,6 +441,7 @@ div .sidebar{
 }
 @media only screen and (max-width: 800px) {
 div .sidebar{
-  background:none;
+  background:url("https://www.bt21.com/im/character/family_friends/crunchy.gif") no-repeat center;
+
 }
 }
