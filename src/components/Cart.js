@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import moneySign from '../moneySign'
+// import moneySign from '../moneySign'
 
+// CLASS COMPONENT + EXPORT
 export default class Cart extends Component {
   render() {
     const { cartItems } = this.props;
     return (
       <div>
         {cartItems.length === 0 ? (
-          <div className="cart cart-header">Cart is empty</div>
-        ) : (
-          <div className="cart cart-header">
+          <div className="cart cart-header">Cart is empty</div>): 
+          (<div className="cart cart-header">
             You have {cartItems.length} in the cart{" "}
-          </div>
-        )}
+          </div>)}
         <div>
           <div className="cart">
             <ul className="cart-items">
@@ -24,7 +23,8 @@ export default class Cart extends Component {
                   <div>
                     <div>{item.title}</div>
                     <div className="right">
-                      {moneySign(item.price)} x {item.count}{" "}
+                      {/* {moneySign(item.price)} x {item.count}{" "} */}
+                     $ {item.price} x {item.count}{" "}
                       <button
                         className="button"
                         onClick={() => this.props.removeFromCart(item)}
@@ -42,9 +42,10 @@ export default class Cart extends Component {
               <div className="total">
                 <div>
                   Total:{" "}
-                  {moneySign(
+                  {/* {moneySign(
                     cartItems.reduce((a, c) => a + c.price * c.count, 0)
-                  )}
+                  )} */}
+                  $ {cartItems.reduce((a, c) => a + c.price * c.count, 0)}
                 </div>
                 <button className="button primary">Purchase</button>
               </div>

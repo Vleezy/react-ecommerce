@@ -1,3 +1,4 @@
+// IMPORTS FOR MY APP
 import React from 'react';
 import data from "./data";
 import Products from './components/Products';
@@ -6,6 +7,7 @@ import Cart from './components/Cart';
 import Navbar from './components/Navbar';
 import Footers from './components/Footers';
 import Showcase from './components/Showcase';
+import Logo from './components/Logo';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -13,9 +15,11 @@ import Showcase from './components/Showcase';
 class App extends React.Component {
   constructor() {
     super();
+    //DEFAULT VALUE FOR STATE COMPONENT
     this.state = {
       products: data.products,
       cartItems: [],
+      //EMPTY BY DEFAULT
       size: "",
       sort: "",
     };
@@ -49,6 +53,7 @@ class App extends React.Component {
     console.log(event.target.value);
     this.setState((state) => ({
       sort: sort,
+      //MOVING PRODUCT IN ARRAY BASED ON INDEX
       products: this.state.products.slice().sort((a, b) => 
         sort === "lowest" ?
           a.price > b.price ? 1 : -1 :
@@ -79,13 +84,11 @@ class App extends React.Component {
       <div className="grid-container">
         <header>
           <div className="nav-container">
-          
           {/* <a href="/">Cookie Shop</a> */}
-          <a href="/"><img src="/images/cookies.png" alt="logo"></img></a>
-          
-          
-          <Navbar>Vlad</Navbar>
-          
+          {/* LOGO COMPONENT */}
+          <Logo></Logo>
+          {/* NAV COMPONENT */}
+          <Navbar></Navbar>
           </div>
         </header>
         <main>
@@ -100,7 +103,7 @@ class App extends React.Component {
                 filterProducts={this.filterProducts}
                 sortProducts={this.sortProducts}>
               </Filter>
-              {/* Products component */}
+              {/* PRODUCTS COMPONENT */}
               <Products 
               product={this.state.products} 
               addToCart={this.addToCart}>

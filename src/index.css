@@ -42,12 +42,16 @@ a{
   grid-template-areas: "header"
   "main"
   "footer";
+  /* header, main, footer */
   grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
   height: 100%;
 }
 
 /* all links */
+main a{
+  color:#772f1a;
+}
 a:hover{
   color:#f2a65a;
 
