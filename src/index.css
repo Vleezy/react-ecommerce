@@ -443,7 +443,7 @@ nav li a{
 
 /* SIDEBAR GIF IMAGES */
 div .sidebar{
-  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat top left, 
+  background:url("https://www.bt21.com/im/character/family_friends/mustashu.gif") no-repeat top center, 
   url("https://thumbs.gfycat.com/ChubbyTartGrayling-max-1mb.gif") no-repeat bottom,
    url("https://pa1.narvii.com/6843/589bd950b4ecce546c381c9b09b2a248d6662744_00.gif") no-repeat center;
   /* background:url("https://pa1.narvii.com/6843/589bd950b4ecce546c381c9b09b2a248d6662744_00.gif") no-repeat ; */
