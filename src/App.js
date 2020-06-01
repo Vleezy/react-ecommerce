@@ -23,7 +23,7 @@ class App extends React.Component {
   removeFromCart = (product) =>{
     const cartItems = this.state.cartItems.slice();
         // get rid of current product selected to remove
-    this.setState({cartItems:cartItems.filter((x)=>x.id !=product.id),
+    this.setState({cartItems:cartItems.filter((x)=>x.id !==product.id),
     });
   };
   // Clone copy of cart items inside state
