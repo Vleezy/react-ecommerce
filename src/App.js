@@ -79,13 +79,13 @@ class App extends React.Component {
       <div className="grid-container">
         <header>
           <div className="nav-container">
-            <div>
+          
           {/* <a href="/">Cookie Shop</a> */}
           <a href="/"><img src="/images/cookies.png" alt="logo"></img></a>
-          </div>
-          <div>
+          
+          
           <Navbar>Vlad</Navbar>
-          </div>
+          
           </div>
         </header>
         <main>
