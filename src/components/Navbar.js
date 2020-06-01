@@ -6,9 +6,9 @@ export default class Navbar extends Component {
       <div className="test">
         <nav className="navigation">
           <ul className="navigation__area">
-            <li><a href="#">Home</a></li>
-            <li><a className="active" href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="http://www.code-test.site/index.html">Home</a></li>
+            <li><a className="active" href="https://ecommerce-vlad.netlify.app">Product</a></li>
+            <li><a href="http://www.code-test.site/contact.html">Contact</a></li>
           </ul>
         </nav>
 
