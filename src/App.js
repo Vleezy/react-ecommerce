@@ -56,30 +56,36 @@ class App extends React.Component {
   // LOGIC OF SORT//FILTER IN FUNCTIONS
   //event parameter comes to the function
   sortProducts = (event) => {
+    // making a variable for sort
     const sort = event.target.value;
     //READ VALUE SELECTED 
     console.log(event.target.value);
+    // STATE that returns an OBJECT as new state
     this.setState((state) => ({
       sort: sort,
       //MOVING PRODUCT IN ARRAY BASED ON INDEX
+      // comparing two parameters and returning a new object
       products: this.state.products.slice().sort((a, b) =>
-        sort === "lowest" ?
-          a.price > b.price ? 1 : -1 :
-          sort === "highest" ?
-            a.price < b.price ? 1 : -1 :
+      // moving product in array based on index
+        sort === "lowest" ? a.price > b.price ? 1 : -1 :
+          sort === "highest" ? a.price < b.price ? 1 : -1 :
+            // if none then based on id
             a.id < b.id ? 1 : -1
       ),
     }));
   };
-  //  Sizes M.FUNCTION allows me to access setState method
+
+
+  //  Sizes FUNCTION allows me to access setState method
   filterProducts = (event) => {
     console.log(event.target.value);
+    // If empty it show show all products
     if (event.target.value === "") {
       this.setState({ size: event.target.value, product: data.products });
     } else {
       this.setState({
         size: event.target.value,
-        //Make sure that the right size is in the array
+        //Function makes sure that the right size exists in availableSize array
         products: data.products.filter
           (product => product.availableSizes.indexOf(event.target.value) >= 0
           ),
@@ -107,6 +113,7 @@ class App extends React.Component {
         <main>
           <div className="content">
             <div className="main">
+              {/* HERO IMAGE */}
               <Showcase></Showcase>
               {/* Passing size and sort to filter as property components + function handles changing size and sort*/}
               {/* FILTER COMPONENT/ PARENT*/}
@@ -118,14 +125,14 @@ class App extends React.Component {
                 filterProducts={this.filterProducts}
                 sortProducts={this.sortProducts}>
               </Filter>
-              {/* PRODUCTS COMPONENT + PROPERTY*/}
+              {/* PRODUCTS COMPONENT + PROPERTIES*/}
               <Products
                 product={this.state.products}
                 addToCart={this.addToCart}>
               </Products>
             </div>
             <div className="sidebar">
-              {/* CART COMPONENT */}
+              {/* CART COMPONENT + PROPERTIES*/}
               <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} />
             </div>
           </div>
