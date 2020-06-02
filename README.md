@@ -91,6 +91,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## React Pages
 
 All pages that are fully implemeted into react.
-- [ ] Home Page
-- [x] Products Page 
-- [ ] Contact Page
+- [ ] Home Page (Static: slider)
+- [x] Products Page (React + Filter)
+- [ ] Contact Page (Static: Validation)

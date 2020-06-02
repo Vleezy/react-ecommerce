@@ -49,7 +49,7 @@ export default class Cart extends Component {
                     cartItems.reduce((a, c) => a + c.price * c.count, 0)
                   )} */}
 
-                  {/* a = accumulator c = current Price that shows after math function*/}
+                  {/* a = accumulator c = current show total*/}
                   $ {cartItems.reduce((a, c) => a + c.price * c.count, 0)}
                 </div>
                 <button className="button primary">Purchase</button>
