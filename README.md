@@ -72,9 +72,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ![Vlad Logo](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy/blob/master/logo-readme.png)
 # GitHub Assignments
-  [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
-  [React Netlify](https://ecommerce-vlad.netlify.app/) - Link to my netlify.
-  [REACT Repository](https://github.com/Vleezy/react-ecommerce) - Link to my react project repository.
+  [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy)
+  [React Netlify](https://ecommerce-vlad.netlify.app/) 
+  [REACT Repository](https://github.com/Vleezy/react-ecommerce)
 
 ```json
 {
