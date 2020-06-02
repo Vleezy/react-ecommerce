@@ -78,12 +78,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
   - [React Repository](https://github.com/Vleezy/react-ecommerce) - Link to my react project repository.
 
 ```json
-Coding A [
+"Coding-A" [
 {
-    id: 1,
-  firstName: "Vladimir",
-  lastName: "Romero",
-  projectBuild: "React"
+    "id": 1,
+  "firstName": "Vladimir",
+  "lastName": "Romero",
+  "projectBuild": "React"
 }
         ]
 ```
