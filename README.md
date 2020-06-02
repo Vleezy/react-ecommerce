@@ -90,7 +90,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## React Pages
 
-I will be submitting my project to this repository.
+All pages that are fully implemeted into react.
 - [ ] Home Page
 - [x] Products Page 
 - [ ] Contact Page
