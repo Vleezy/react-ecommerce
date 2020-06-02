@@ -61,7 +61,7 @@ a:hover{
 
 /* PAGE */
 header{
-  grid-area:header;
+  grid-area: header;
   background-color: #772f1a;
   color:white;
   display:flex;

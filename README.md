@@ -67,6 +67,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
-# REACT ECOMMERCE
-## PRODUCT PAGE
-### Vlad
+# R2H REACT ECOMMERCE PROJECT
+
+
+![Vlad Logo](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy/blob/master/logo-readme.png)
+# GitHub Assignments
+  [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
+  [React Netlify](https://ecommerce-vlad.netlify.app/) - Link to my netlify.
+  [REACT Repository](https://github.com/Vleezy/react-ecommerce) - Link to my react project repository.
+
+```json
+{
+    "id": "1",
+  "firstName": "Vladimir",
+  "lastName": "Romero",
+  "projectBuild": "React"
+}
+```
+
+## React Pages
+
+I will be submitting my project to this repository.
+- [] Home Page
+- [x] Products Page 
+- [] Contact Page

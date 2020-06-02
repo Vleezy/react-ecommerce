@@ -29,8 +29,7 @@ class App extends React.Component {
   // CART FUNCTIONS
 
   removeFromCart = (product) => {
-    const cartItems = this.state.cartItems.slice();
-    // get rid of current product selected  
+    const cartItems = this.state.cartItems.slice(); 
     this.setState({
       // Arrow function to get rid of selected item
       cartItems: cartItems.filter((x) => x.id !== product.id),
