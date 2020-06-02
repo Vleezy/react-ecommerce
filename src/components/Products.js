@@ -34,6 +34,7 @@ export default class Products extends Component {
                                         $ {product.price}
                                     </div>
                                     {/* Arrow function event listener where we pass product through Cart */}
+                                    {/* product button in app.js */}
                                     <button onClick={()=>this.props.addToCart(product)} className="button primary">
                                         Add To Cart
                                     </button>

@@ -13,13 +13,14 @@ import Logo from './components/Logo';
 
 //CLASS COMPONENT
 class App extends React.Component {
+  // Initializing obj's state
   constructor() {
     super();
     //DEFAULT VALUE FOR STATE COMPONENT
     this.state = {
       products: data.products,
-      cartItems: [],
       //EMPTY BY DEFAULT
+      cartItems: [],
       size: "",
       sort: "",
     };
@@ -29,16 +30,19 @@ class App extends React.Component {
 
   removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice();
-    // get rid of current product selected to remove
+    // get rid of current product selected  
     this.setState({
+      // Arrow function to get rid of selected item
       cartItems: cartItems.filter((x) => x.id !== product.id),
     });
   };
   // Clone copy of cart items inside state
+  // FUNCTION (to add)
   addToCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     let alreadyInCart = false;
     // If already exist update the number of carts
+    // execute func once for each element
     cartItems.forEach((item) => {
       if (item.id === product.id) {
         item.count++;
@@ -46,6 +50,7 @@ class App extends React.Component {
       }
     });
     if (!alreadyInCart) {
+      // creating a new instance of the item and pushing it to carItems
       cartItems.push({ ...product, count: 1 });
     }
     this.setState({ cartItems });

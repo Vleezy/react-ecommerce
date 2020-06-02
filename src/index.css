@@ -186,6 +186,7 @@ max-height: 37rem;
   border: 0.1rem white solid;
   cursor:pointer;
   box-shadow: 0 0 5px #f2a65a, 0 0 10px #f2a65a;
+  
 }
 .button.primary{
   background-color:#772f1a ;
@@ -212,9 +213,13 @@ margin: 1rem;
 display:flex;
 background-color:rgba(255, 255, 255, 0.137);
 }
+div .cart .cart-header{
+  text-align: center;
+}
 .cart-header{
   border-bottom: 0.1rem #f2a65a solid;
   background-color: white;
+  text-align: center;
 
 }
 .cart-items{
