@@ -10,6 +10,7 @@ export default class Products extends Component {
                 <ul className="products">
                     {/* GET LIST OF PRODUCTS AS PROP FROM PARENT COMPONENT */}
                     {this.props.product.map(product =>
+                    // key = new identity per to notice change
                         <li key={product.id}>
                             {/* EACH PRODUCT : UNIQUE KEY LIST (keeps track) IS BEING ALTERED BY IN MAPS */}
                             <div className="product">

@@ -78,7 +78,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
   - [React Repository](https://github.com/Vleezy/react-ecommerce) - Link to my react project repository.
 
 ```json
-"Coding-A" [
+"Coding-B" [
 {
     "id": 1,
   "firstName": "Vladimir",
@@ -90,7 +90,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## React Pages
 
-All pages that are fully implemeted into react.
+All pages that are fully implemented into react.
 - [ ] Home Page (Static: slider)
 - [x] Products Page (React + Filter)
 - [ ] Contact Page (Static: Validation)
