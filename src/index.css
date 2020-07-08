@@ -284,6 +284,8 @@ input{
   flex-wrap:wrap;
   justify-content:space-between;
   max-height:96vh;
+  background-color: rgba(160,81,45,.4);
+  border-radius:30rem;
  
 }
 .product-details img{
@@ -311,11 +313,6 @@ input{
    background-color:#772f1a;
    color:white;
 }
-/* .product-img{
-  max-height:50rem;
-  max-width:50rem;
-  border-radius:50rem;
-} */
 
 
 /*footer + content*/
