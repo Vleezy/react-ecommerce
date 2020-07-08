@@ -73,9 +73,36 @@ export default class Products extends Component {
                 </Fade>
                 {/* Conditional rendering for modal */}
                 {product && (
-                <Modal isOpen={true}>
+                <Modal isOpen={true} onRequestClose={this.closeModal}>
                     <Zoom>
-                    <div>Modal</div>
+                    <button className="close-modal" onClick={this.closeModal}>x</button>
+                    <div className="product-details">
+                    <img src={product.image} alt={product.title}></img>
+                    <div className="product-details-description">
+                    <p>
+                    <strong>{product.title}</strong>
+                    </p>
+                    <p>{product.description}</p>
+                    <p>
+                    Available Packages:{" "}
+                    {product.availableSizes.map(x => (
+                        <span> 
+                        {" "}
+                         <button className="button">{x}</button>
+                        </span>
+                                ))}
+                    </p>
+                    <div className="prooduct-price">
+                    <div>
+                    ${(product.price)}</div>
+                    <button className="button primary" onClick={() =>{
+                        this.addToCart(product);
+                        this.closeModal();
+                    }}> Add To Cart </button>
+                    </div>
+                    </div>
+                    </div>
+                    {/* <div>Modal</div> */}
                     </Zoom>
                 </Modal>
                     )}
