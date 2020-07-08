@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-// import moneySign from '../moneySign'
+// import moneySign from '../moneySign';
+//npm i react-reveal
+import Fade from 'react-reveal/Fade';
 
 // CLASS COMPONENT + EXPORT
 export default class Cart extends Component {
@@ -40,6 +42,8 @@ export default class Cart extends Component {
         <div>
           {/* CART Product CARD */}
           <div className="cart">
+          {/* Animation fade */}
+          <Fade right cascade>
             <ul className="cart-items">
               {/* Each item converts */}
               {cartItems.map((item) => (
@@ -62,8 +66,8 @@ export default class Cart extends Component {
                 </li>
               ))}
             </ul>
+            </Fade>
           </div>
-
           {cartItems.length !== 0 && (
             <div>
             <div className="cart">
@@ -84,7 +88,10 @@ export default class Cart extends Component {
             </div>
              {/* Creating form */}
             {this.state.showCheckout && (
+              // Animation
+              <Fade right cascade>
               <div className="cart">
+              {/* FORM */}
               <form onSubmit={this.createOrder}>
               <ul className="form-container">
               <li>
@@ -105,6 +112,7 @@ export default class Cart extends Component {
               </ul>
               </form>
               </div>
+              </Fade>
             )}
             </div>
           )}

@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-// import moneySign from '../moneySign'
+import React, { Component } from 'react';
+// import moneySign from '../moneySign';
+//npm i react-reveal for animations
+import Fade from 'react-reveal/Fade';
 
 
 // CLASS COMPONENT + EXPORT 
@@ -7,6 +9,8 @@ export default class Products extends Component {
     render() {
         return (
             <div>
+            {/* Animation fade using react-reveal */}
+            <Fade bottom cascade>
                 <ul className="products">
                     {/* GET LIST OF PRODUCTS AS PROP FROM PARENT COMPONENT */}
                     {this.props.product.map(product =>
@@ -44,6 +48,7 @@ export default class Products extends Component {
                         </li>
                         )}
                 </ul>
+                </Fade>
             </div>
         )
     }
