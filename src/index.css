@@ -287,8 +287,8 @@ input{
  
 }
 .product-details img{
- height:35rem;
- width:45rem;
+ height:60rem;
+ width:33rem;
   border-radius:50rem;
 }
 .product-details{
@@ -298,8 +298,9 @@ input{
   
 }
 .product-details-description{
-  /* flex:1 1; */
+  flex:1 1;
   margin:1rem;
+  margin-top:10rem;
   
 }
 .close-modal{
