@@ -77,7 +77,7 @@ export default class Products extends Component {
                     <Zoom>
                     <button className="close-modal" onClick={this.closeModal}>x</button>
                     <div className="product-details">
-                    <img src={product.image} alt={product.title}></img>
+                    <img className="product-img" src={product.image} alt={product.title} ></img>
                     <div className="product-details-description">
                     <p>
                     <strong>{product.title}</strong>
@@ -96,7 +96,7 @@ export default class Products extends Component {
                     <div>
                     ${(product.price)}</div>
                     <button className="button primary" onClick={() =>{
-                        this.addToCart(product);
+                        this.props.addToCart(product);
                         this.closeModal();
                     }}> Add To Cart </button>
                     </div>
