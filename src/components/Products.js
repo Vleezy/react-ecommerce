@@ -2,11 +2,33 @@ import React, { Component } from 'react';
 // import moneySign from '../moneySign';
 //npm i react-reveal for animations
 import Fade from 'react-reveal/Fade';
+//npm i react-modal for images
+import Modal from 'react-modal';
+//react-reveal zoom animation
+import Zoom from "react-reveal/Zoom";
 
 
 // CLASS COMPONENT + EXPORT 
 export default class Products extends Component {
+    // hide or show modal we define a constructor
+    constructor(props){
+        super(props);
+        // initial value for modal if product exist show it if not don't
+        this.state = {
+            product: null,
+        };
+    }
+    // Sets product to null/none to close modal
+    closeModal =() =>{
+        this.setState({product: null});
+    };
+    // method/function running this line of code fills the state product with onClick
+    openModal = (product) => {
+        this.setState({product});
+    };
     render() {
+        // modal 
+        const {product} = this.state;
         return (
             <div>
             {/* Animation fade using react-reveal */}
@@ -19,7 +41,7 @@ export default class Products extends Component {
                             {/* EACH PRODUCT : UNIQUE KEY LIST (keeps track) IS BEING ALTERED BY IN MAPS */}
                             <div className="product">
                                 {/* GIVE ID# TO HREF */}
-                                <a href={"#" + product.id}>
+                                <a href={"#" + product.id} onClick={() => this.openModal(product)}>
                                     {/* PRODUCT IMAGE */}
                                 <img src={product.image} alt={product.title}></img>
                                 <p>
@@ -49,6 +71,14 @@ export default class Products extends Component {
                         )}
                 </ul>
                 </Fade>
+                {/* Conditional rendering for modal */}
+                {product && (
+                <Modal isOpen={true}>
+                    <Zoom>
+                    <div>Modal</div>
+                    </Zoom>
+                </Modal>
+                    )}
             </div>
         )
     }
