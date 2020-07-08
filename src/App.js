@@ -19,21 +19,29 @@ class App extends React.Component {
     //DEFAULT VALUE FOR STATE COMPONENT
     this.state = {
       products: data.products,
-      //EMPTY BY DEFAULT
-      cartItems: [],
+      //Check if exists else use empty array/ it keeps the items after you refresh the page.
+      cartItems: localStorage.getItem("cartItems")? 
+      JSON.parse(localStorage.getItem("cartItems")) 
+      :[],
       size: "",
       sort: "",
     };
   }
+createOrder = (order) =>{
+  alert("Need to save order for" + order.name);
+}
 
   // CART FUNCTIONS
-
   removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice(); 
     this.setState({
       // Arrow function to get rid of selected item
       cartItems: cartItems.filter((x) => x.id !== product.id),
     });
+    //refresh if items stay in cart unless removed
+    localStorage.setItem("cartItems", 
+    JSON.stringify(cartItems.filter((x) => x.id !== product.id))
+    );
   };
   // Clone copy of cart items inside state
   // FUNCTION (to add)
@@ -53,6 +61,8 @@ class App extends React.Component {
       cartItems.push({ ...product, count: 1 });
     }
     this.setState({ cartItems });
+    //Convert JS object to a string
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
   // FILTER FUNCTIONS
@@ -137,7 +147,7 @@ class App extends React.Component {
             </div>
             <div className="sidebar">
               {/* CART COMPONENT + PROPERTIES*/}
-              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} />
+              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} createOrder={this.createOrder}/>
             </div>
           </div>
         </main>

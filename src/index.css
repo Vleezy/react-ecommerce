@@ -258,7 +258,25 @@ div .cart .cart-header{
 flex:1;
 }
 
+/* Checkout Form */
+form{
+  width:100%;
+}
+.form-container{
+  width:100%;
+  padding: 0;
+  list-style-type: none;
+}
+.form-container li{
+  display:flex;
+  flex-direction:column;
+  padding: 1rem;
+}
+input{
+  padding:.3rem;
+  border:.1rem solid #A0522D;
 
+}
 
 /*footer + content*/
 
