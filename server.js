@@ -8,9 +8,15 @@ const mongoose = require("mongoose");
 //shortid= library to create userfriendly id to save as a product id
 const shortid = require("shortid");
 
+//var data = require("./build/data.json");
 const app = express();
 app.use(bodyParser.json());
 //initialize mongodb
+
+// deploy
+// app.use("/", express.static(_dirname + "/build"));
+// app.get("/", (req,res) => res.sendFile(_dirname + "/build/index.html"));
+
 mongoose.connect("mongodb+srv://Vlad:0223407Jv@ecommerce.o8jqu.mongodb.net/ecommerce?retryWrites=true&w=majority",{
 useNewUrlParser: true,
 useCreateIndex: true,
@@ -46,7 +52,7 @@ app.get("/api/products", async (req,res) => {
 // **CREATE LIST OF PRODUCTS
 
 //Endpoint to create a product in db
-app.post("/api/products", async(req,res) => {
+app.post("/api/products", async (req,res) => {
     // filling req.body with new a product
 const newProduct = new Product(req.body)
     // saving new product to db
@@ -57,9 +63,9 @@ res.send(savedProduct);
 // **DELETES PRODUCT
 
 //Endpoint delete api that finds the id and deletes it
-app.delete("/api/products/:id", async(req,res) =>{
+app.delete("/api/products/:id", async (req,res) => {
     const deletedProduct = await Product.findByIdAndDelete(req.params.id);
-    res.send(deletedProduct)
+    res.send(deletedProduct);
 });
 
 //PORT
